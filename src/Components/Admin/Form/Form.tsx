@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Admin from '../../../Pages/Admin';
+import Admin from '../../../Containers/Admin';
 import axiosApi from '../../../axiosApi';
 import {useNavigate} from 'react-router-dom';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import Admin from '../../../Pages/Admin';
+import Admin from './Admin';
 
 const Orders:React.FC= () => {
     return (
