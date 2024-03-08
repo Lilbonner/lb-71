@@ -37,7 +37,8 @@ button {
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: black;
+  background-color: #c6c6c6;
 }
 
 button:focus,
