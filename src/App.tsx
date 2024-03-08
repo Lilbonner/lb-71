@@ -18,6 +18,7 @@ function App() {
                 <Route path="/admin/dish/new-form" element={<Form/>}/>
                 <Route path="/admin/dish/edit-form/:id" element={<EditDish/>}/>
                 <Route path="/admin/orders" element={<Orders/>}/>
+                <Route path="*" element={<h1>Not found!</h1>} />
             </Routes>
         </>
     );
