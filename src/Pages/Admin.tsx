@@ -5,7 +5,7 @@ const Admin: React.FC = () => {
     return (
         <div>
             <div className="flex bg-blue-300 text-white h-14 justify-between px-4 items-center">
-              <Link to="/admin">
+              <Link to="/admin/dish/list">
                 <h2 className="text-4xl ml-16 mt-1">Turtle pizza admin</h2>
               </Link>
                 <div className="text-2xl mr-11 flex ">

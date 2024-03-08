@@ -1,5 +1,4 @@
 import './App.css';
-import Admin from './Pages/Admin';
 import {Route, Routes} from 'react-router-dom';
 import List from './Components/Admin/Dishes/List';
 import Form from "./Components/Admin/Dishes/Form";
@@ -9,10 +8,9 @@ function App() {
 
   return (
     <>
-      <div>
+      <div  >
       </div>
       <Routes>
-          <Route path="/admin" element={<Admin/>} />
           <Route path="/admin/dish/list" element={<List/>} />
           <Route path="/admin/dish/form" element={<Form/>} />
           <Route path="/admin/orders" element={<Orders/>} />
