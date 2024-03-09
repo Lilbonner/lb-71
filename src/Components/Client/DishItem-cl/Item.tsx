@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
 import axiosApi from "../../../axiosApi";
 
-const Item = ({ dish }) => {
+const Item = ({ dish, addToCart }) => {
     const [imageUrl, setImageUrl] = useState('');
+    const { id } = dish;
 
     useEffect(() => {
         const fetchImageUrl = async () => {
@@ -21,9 +22,8 @@ const Item = ({ dish }) => {
     }, [dish.id]);
 
 
-
     return (
-        <div className="dish-item bg-blue-100 mx-20 mt-5 h-24 rounded-md">
+        <div className="dish-item bg-blue-100 mx-20 mt-5 h-24 rounded-md" onClick={() => addToCart(id)}>
             <div className="flex justify-between px-4 items-center pt-2">
                 <img src={imageUrl} alt={dish.title} className="w-20 h-20 rounded-md" />
                 <p className="ml-10">{dish.title}</p>
